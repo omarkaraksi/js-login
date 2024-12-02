@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="mb-3">
+            <label for="exampleInputUsername" class="form-label">Name</label>
+            <input
+              type="username"
+              class="form-control"
+              id="exampleInputUsername"
+              aria-describedby="emailHelp"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword"
+            />
+          </div>
+          <button
+            type="submit"
+            onclick="signUp()"
+            id="signUpBtn"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+          <div class="col-12" id="success-msg" style="color: green"></div>
+
+          <div class="col-12" id="error-msg" style="color: red"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
